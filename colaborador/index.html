@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>SGC</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <input type="checkbox" id="myInput">
+            <label for="myInput">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </label>
+            <aside>
+                <div class="aside-section aside-left">
+                    <div class="aside-content">
+                        <p> ¡Que hay de nuevo! </p>
+                        <p id="demo"> </p>
+                        <button class="button"> CTA </button>
+                    </div>
+                </div>
+                <div class="aside-section aside-right">
+                    <ul class="aside-list">
+                        <li><a href="index.html" class="aside-anchor">Inicio</a></li>
+                        <li><a href="misCitas.html" class="aside-anchor">Mis Citas</a></li>
+                        <li><a href="miPerfil.html" class="aside-anchor">Mi Perfil</a></li>
+                        <li><a href="../login/index.html" class="aside-anchor">Cerrar Sesion</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+    </main>
+
+</body>
+<script>
+    var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+    var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+    var f = new Date();
+    document.getElementById("demo").innerHTML = "Hoy es " + diasSemana[f.getDay()] + ", " + f.getDate() +
+        " de " + meses[f.getMonth()] + " de " + f.getFullYear() + ". ¿List@ para tener un gran dia?";
+</script>
+
+</html>
