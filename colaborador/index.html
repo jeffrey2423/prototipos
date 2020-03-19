@@ -1,49 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>SGC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../main.css">
+    <title>Schedule Template | CodyHouse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <main>
-        <header>
-            <input type="checkbox" id="myInput">
-            <label for="myInput">
-                <span class="bar top"></span>
-                <span class="bar middle"></span>
-                <span class="bar bottom"></span>
-            </label>
-            <aside>
-                <div class="aside-section aside-left">
-                    <div class="aside-content">
-                        <p> ¡Que hay de nuevo! </p>
-                        <p id="demo"> </p>
-                        <button class="button"> CTA </button>
-                    </div>
-                </div>
-                <div class="aside-section aside-right">
-                    <ul class="aside-list">
-                        <li><a href="index.html" class="aside-anchor">Inicio</a></li>
-                        <li><a href="misCitas.html" class="aside-anchor">Mis Citas</a></li>
-                        <li><a href="miPerfil.html" class="aside-anchor">Mi Perfil</a></li>
-                        <li><a href="../login/index.html" class="aside-anchor">Cerrar Sesion</a></li>
-                    </ul>
-                </div>
-            </aside>
-        </header>
-    </main>
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+
+    <div class="cd-schedule cd-schedule--loading margin-top-lg margin-bottom-lg js-cd-schedule margin-top-lg">
+        <div class="cd-schedule__timeline">
+            <ul>
+                <li><span>09:00</span></li>
+                <li><span>09:30</span></li>
+                <li><span>10:00</span></li>
+                <li><span>10:30</span></li>
+                <li><span>11:00</span></li>
+                <li><span>11:30</span></li>
+                <li><span>12:00</span></li>
+                <li><span>12:30</span></li>
+                <li><span>13:00</span></li>
+                <li><span>13:30</span></li>
+                <li><span>14:00</span></li>
+                <li><span>14:30</span></li>
+                <li><span>15:00</span></li>
+                <li><span>15:30</span></li>
+                <li><span>16:00</span></li>
+                <li><span>16:30</span></li>
+                <li><span>17:00</span></li>
+                <li><span>17:30</span></li>
+                <li><span>18:00</span></li>
+            </ul>
+        </div> <!-- .cd-schedule__timeline -->
+
+        <div class="cd-schedule__events">
+            <ul>
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info"><span>Monday</span></div>
+
+                    <ul>
+                        <li class="cd-schedule__event">
+                            <a data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"
+                                href="#0">
+                                <em class="cd-schedule__name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="11:00" data-end="12:30" data-content="event-rowing-workout"
+                                data-event="event-2" href="#0">
+                                <em class="cd-schedule__name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="14:00" data-end="15:15" data-content="event-yoga-1" data-event="event-3"
+                                href="#0">
+                                <em class="cd-schedule__name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info"><span>Tuesday</span></div>
+
+                    <ul>
+                        <li class="cd-schedule__event">
+                            <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                                data-event="event-2" href="#0">
+                                <em class="cd-schedule__name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="11:30" data-end="13:00" data-content="event-restorative-yoga"
+                                data-event="event-4" href="#0">
+                                <em class="cd-schedule__name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1"
+                                href="#0">
+                                <em class="cd-schedule__name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"
+                                href="#0">
+                                <em class="cd-schedule__name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info"><span>Wednesday</span></div>
+
+                    <ul>
+                        <li class="cd-schedule__event">
+                            <a data-start="09:00" data-end="10:15" data-content="event-restorative-yoga"
+                                data-event="event-4" href="#0">
+                                <em class="cd-schedule__name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3"
+                                href="#0">
+                                <em class="cd-schedule__name">Yoga Level 1</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="12:00" data-end="13:45" data-content="event-rowing-workout"
+                                data-event="event-2" href="#0">
+                                <em class="cd-schedule__name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3"
+                                href="#0">
+                                <em class="cd-schedule__name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info"><span>Thursday</span></div>
+
+                    <ul>
+                        <li class="cd-schedule__event">
+                            <a data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1"
+                                href="#0">
+                                <em class="cd-schedule__name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="12:00" data-end="13:45" data-content="event-restorative-yoga"
+                                data-event="event-4" href="#0">
+                                <em class="cd-schedule__name">Restorative Yoga</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1"
+                                href="#0">
+                                <em class="cd-schedule__name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="17:00" data-end="18:30" data-content="event-rowing-workout"
+                                data-event="event-2" href="#0">
+                                <em class="cd-schedule__name">Rowing Workout</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="cd-schedule__group">
+                    <div class="cd-schedule__top-info"><span>Friday</span></div>
+
+                    <ul>
+                        <li class="cd-schedule__event">
+                            <a data-start="10:00" data-end="11:00" data-content="event-rowing-workout"
+                                data-event="event-2" href="#0">
+                                <em class="cd-schedule__name">Rowing Workout</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1"
+                                href="#0">
+                                <em class="cd-schedule__name">Abs Circuit</em>
+                            </a>
+                        </li>
+
+                        <li class="cd-schedule__event">
+                            <a data-start="15:45" data-end="16:45" data-content="event-yoga-1" data-event="event-3"
+                                href="#0">
+                                <em class="cd-schedule__name">Yoga Level 1</em>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cd-schedule-modal">
+            <header class="cd-schedule-modal__header">
+                <div class="cd-schedule-modal__content">
+                    <span class="cd-schedule-modal__date"></span>
+                    <h3 class="cd-schedule-modal__name"></h3>
+                </div>
+
+                <div class="cd-schedule-modal__header-bg"></div>
+            </header>
+
+            <div class="cd-schedule-modal__body">
+                <div class="cd-schedule-modal__event-info"></div>
+                <div class="cd-schedule-modal__body-bg"></div>
+            </div>
+
+            <a href="#0" class="cd-schedule-modal__close text-replace">Close</a>
+        </div>
+
+        <div class="cd-schedule__cover-layer"></div>
+    </div> <!-- .cd-schedule -->
+
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+        var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+        var f = new Date();
+        document.getElementById("demo").innerHTML = "Hoy es " + diasSemana[f.getDay()] + ", " + f.getDate() +
+            " de " + meses[f.getMonth()] + " de " + f.getFullYear() + ". ¿List@ para tener un gran dia?";
+    </script>
+    <script src="../agenda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "25%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
-<script>
-    var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-    var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
-    var f = new Date();
-    document.getElementById("demo").innerHTML = "Hoy es " + diasSemana[f.getDay()] + ", " + f.getDate() +
-        " de " + meses[f.getMonth()] + " de " + f.getFullYear() + ". ¿List@ para tener un gran dia?";
-</script>
 
 </html>
